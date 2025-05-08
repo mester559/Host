@@ -186,7 +186,7 @@ bot('sendmessage', [
 'disable_web_page_preview' => true,
 'reply_markup' => json_encode([
 'inline_keyboard' => [
-[['text' => " مطور البوت ", 'url' => "https://t.me/T_0_M0"], ['text' => " قناة البوت ", 'url' => "https://t.me/+_wM_eDKDTgM3ZjUy"]],
+[['text' => " مطور البوت ", 'url' => "https://t.me/Y_U_U_X"], ['text' => " قناة البوت ", 'url' => "https://t.me/TP_Q_T"]],
 ]
 ])
 ]);
