@@ -1,8 +1,10 @@
-# استخدم صورة PHP الرسمية مع Apache
 FROM php:8.2-apache
 
-# نسخ جميع الملفات من مجلد المشروع إلى مجلد الويب الافتراضي في Apache
+# نسخ ملفات المشروع
 COPY . /var/www/html/
 
-# فتح المنفذ 80
-EXPOSE 80
+# تعيين صلاحيات للمجلد
+RUN chmod -R 777 /var/www/html
+
+# تمكين عرض الملفات النصية
+RUN a2enmod rewrite
