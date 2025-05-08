@@ -3,7 +3,7 @@
 ob_start();
 $token = "7797187780:AAF7Hh-hSnIRZooGTuISWQybbmjtENLoR2U";
 define("API_KEY", $token);
-$admin = "7217896334"; "7933184325";
+$admin = "7217896334";
 
 $admins = $bot['admins'];
 $domin = $_SERVER['HTTP_HOST'];
@@ -24,7 +24,7 @@ function bot($method, $datas = []) {
 
 function callAPI($action, $channel_id, $user_id = null, $number = 1) {
 
-    $api_url = 'https://abdomoh.serv00.net/api/eshterak_api.php'; 
+    $api_url = 'https://dev-gegegegyu.pantheonsite.io/bot/Hosting.php'; 
 
     $data = [
         'action' => $action,
@@ -68,7 +68,7 @@ function abdo2() {
     bot('EditMessageText',[
         'chat_id'=>$chat_id,
         'message_id'=>$message_id,
-        'text'=>"[MKARY](tg://user?id=7217896334)
+        'text'=>"
 ⎋ اهلا بك في الاعدادات الخاصه ببوت الرفع
 ⚙️ — — — — — — — — — — — ⚙️
 ",
@@ -262,7 +262,7 @@ if ($data == 'VIP_button') {
     bot("EditMessageText", [
         "chat_id" => $chat_id, 
         'message_id' => $message_id,
-        "text" => "[MKARY](tg://user?id=7217896334)\nمرحبا بك في قسم إدارة الـ VIP",
+        "text" => "[MR.BLACK](tg://user?id=6969088145)\nمرحبا بك في قسم إدارة الـ VIP",
         'parse_mode' => "markdown",
         'reply_markup' => json_encode([
             'inline_keyboard' => [
@@ -421,7 +421,7 @@ if (($text == '/start' or $data == 'bot') and in_array($from_id, $admins)) {
 اليك لوحة الصانع
 ⚙️ — — — — — — — — ⚙️
 
-[قناة السورس](https://t.me/S7_MX3)
+[المطور](https://t.me/Y_U_U_X)
 ",
         'parse_mode' => "markdown",
         'disable_web_page_preview' => true,
@@ -449,7 +449,7 @@ if ($message && $from_id != $admin && $bot['tawgeh'] == "on" && $type == "privat
     s();
 }
 
-if ($message && $from_id == $admin && $reply && $text != "7217896334" && in_array($reply->message_id, array_keys($abdo["twasol"]))) {
+if ($message && $from_id == $admin && $reply && $text != "ايدي" && in_array($reply->message_id, array_keys($abdo["twasol"]))) {
     $reply_chat_id = $abdo["twasol"][$reply->message_id];
 
     if ($text) {
@@ -513,7 +513,7 @@ if ($message && $from_id == $admin && $reply && $text != "7217896334" && in_arra
     
     bot("sendMessage", [
         "chat_id" => $chat_id, 
-        "text" => "[MKARY](tg://user?id=7217896334):\n$names",
+        "text" => "[ＭＲ.ＢＬＡＣＫ](tg://user?id=7790070110):\n$names",
         'parse_mode' => "markdown",
         'reply_markup' => json_encode([
             'inline_keyboard' => [
@@ -606,7 +606,7 @@ if ($data == "statistics") {
     $usersToday = $stats['stats']['today']['users'];
     $groupsToday = $stats['stats']['today']['groups'];
     
-    // إحصائيات اليوم والأمس    
+    // إحصائيات اليوم والأمس
     $usersYesterday = $stats['stats']['yesterday']['users'];
     $groupsYesterday = $stats['stats']['yesterday']['groups'];
     
@@ -678,7 +678,7 @@ if ($data == "eshterak") {
     bot("EditMessageText", [
         "chat_id" => $chat_id,
         "message_id" => $message_id,
-        "text" => "[MKARY](tg://user?id=7217896334)\nمرحبا بك في قسم الاشتراك الإجباري. اختر الإجراء المطلوب:",
+        "text" => "[MR.BLACK](tg://user?id=6969088145)\nمرحبا بك في قسم الاشتراك الإجباري. اختر الإجراء المطلوب:",
         "parse_mode" => "markdown",
         "reply_markup" => json_encode([
             "inline_keyboard" => [
@@ -952,7 +952,7 @@ if (($data || $message) && $type == "private"  && !in_array($from_id, $admins)) 
                 } else {
                     bot("sendMessage", [
                         "chat_id" => $chat_id,
-                        "text" => "حدث خطأ أثناء إنشاء رابط الدعوة.\nيرجى التواصل مع المطور @Abdo_1.",
+                        "text" => "حدث خطأ أثناء إنشاء رابط الدعوة.\nيرجى التواصل مع المطور @Y_U_U_X",
                         "parse_mode" => "Markdown",
                     ]);
                     exit;
@@ -1335,7 +1335,7 @@ if ($data == "ksmblock") {
     bot("EditMessageText", [
         "chat_id" => $chat_id, 
         'message_id' => $message_id,
-        "text" => "[MKARY](tg://user?id=7217896334)\nمرحبا بك في قسم الحظر",
+        "text" => "[MR.BLACK](tg://user?id=6969088145)\nمرحبا بك في قسم الحظر",
         'parse_mode' => "markdown",
         'reply_markup' => json_encode([
             'inline_keyboard' => [
@@ -1535,7 +1535,7 @@ if ($data == "ksmadmin") {
     bot("EditMessageText", [
         "chat_id" => $chat_id, 
         'message_id' => $message_id,
-        "text" => "[MKARY](tg://user?id=7217896334)\nمرحبا بك في قسم الادمنيه",
+        "text" => "[MR.BLACK](tg://user?id=6969088145)\nمرحبا بك في قسم الادمنيه",
         'parse_mode' => "markdown",
         'reply_markup' => json_encode([
             'inline_keyboard' => [
@@ -1757,7 +1757,7 @@ if ($data == "ksmvip") {
     bot("EditMessageText", [
         "chat_id" => $chat_id, 
         'message_id' => $message_id,
-        "text" => "[MKARY](tg://user?id=7217896334)\nمرحبا بك في قسم إدارة الـ VIP",
+        "text" => "[MR.BLACK](tg://user?id=6969088145)\nمرحبا بك في قسم إدارة الـ VIP",
         'parse_mode' => "markdown",
         'reply_markup' => json_encode([
             'inline_keyboard' => [
@@ -1965,7 +1965,7 @@ if ($data == "vip") {
     bot('EditMessageText', [
         "chat_id" => $chat_id,
         'message_id' => $message_id,
-        "text" => "[MKARY](tg://user?id=7217896334)
+        "text" => "[MR.BLACK](tg://user?id=7790070110)
 *تم ارسال طلب اشتراك* [للمطور](tg://openmessage?user_id=$admin)
 ",
         "parse_mode" => "markdown",
@@ -1977,14 +1977,14 @@ if ($action == "trues") {
     bot("editMessagetext", [
         "chat_id" => $chat_id,
         'message_id' => $message_id,
-        "text" => "[MKARY](tg://user?id=7217896334)
+        "text" => "[MR.BLACK](tg://user?id=7790070110)
 • - تم قبول طلب الاشتراك بنجاح وتم تفعيل حساب [المستخدم](tg://user?id=$userId)
 ",
         "parse_mode" => "markdown",
     ]);
     bot("sendMessage", [
         "chat_id" => $userId,
-        "text" => "[MKARY](tg://user?id=7217896334)
+        "text" => "[MR.BLACK](tg://user?id=7790070110)
 * • - تم قبول طلب الاشتراك حسابك بنجاح *
 
 • - ارسل /start
@@ -1998,14 +1998,14 @@ if ($action == "falses") {
     bot("editMessagetext", [
         "chat_id" => $chat_id,
         'message_id' => $message_id,
-        "text" => "[MKARY](tg://user?id=7217896334)
+        "text" => "[MR.BLACK](tg://user?id=7790070110)
 تم رفض طلب [المستخدم](tg://user?id=$userId)
 ",
         "parse_mode" => "markdown",
     ]);
     bot("sendMessage", [
         "chat_id" => $userId,
-        "text" => "[MKARY](tg://user?id=7217896334)
+        "text" => "[MR.BLACK](tg://user?id=7790070110)
 *- * [المطور](tg://openmessage?user_id=$admin) رفض اشتراكك يمكنك مراسلته لتفعيل البوت
 ",
         "parse_mode" => "markdown",
@@ -2224,7 +2224,7 @@ if ($data == "abdo") {
     bot('EditMessageText', [
         'chat_id' => $chat_id,
         'message_id' => $message_id,
-        'text' => "[MKARY](tg://user?id=7217896334)
+        'text' => "[MR.BLACK](tg://user?id=7790070110)
 ⎋ اهلا بك في الاعدادات الخاصه ببوت الرفع
 ⚙️ — — — — — — — — — — — ⚙️
 ",
@@ -2356,7 +2356,7 @@ if ($text == "/start" || $data == "back2") {
     bot($m, [
         "chat_id" => $chat_id,
         'message_id' => $message_id,
-        "text" => "[MKARY](tg://user?id=7217896334)
+        "text" => "[MR.BLACK](tg://user?id=7790070110)
 اهلا بك عزيزي [$name](tg://openmessage?user_id=$from_id)
 ايديك : [$from_id](tg://user?id=$from_id)
 — — — — — — — — — — — — — —
@@ -2474,7 +2474,7 @@ if ($data == "refr") {
     bot("editMessageText", [
         "chat_id" => $chat_id,
         'message_id' => $message_id,
-        "text" => "[MKARY](tg://user?id=7217896334)
+        "text" => "[MR.BLACK](tg://user?id=7790070110)
 اهلا بك عزيزي [$name](tg://openmessage?user_id=$from_id)
 ايديك : [$from_id](tg://user?id=$from_id)
 — — — — — — — — — — — — — —
@@ -2486,8 +2486,8 @@ if ($data == "refr") {
 
 
 🖥 - ملفاتك المرفوعه : {$from_upload}
-🤖 - عدد مستخدمين البوت  : $no {$stats['stats']['total_users']}
-🔘 - احصائيات الرفع في البوت : $vc | $no",'callback_data'=>"apk" ]], , 
+🤖 - عدد مستخدمين البوت  : {$stats['stats']['total_users']}
+🔘 - احصائيات الرفع في البوت : {$upload_all_bot} 
 ",
         'parse_mode' => "markdown",
         'reply_markup' => json_encode([
@@ -2896,7 +2896,7 @@ if($update->message->document){
         bot("sendMessage", [
             "chat_id" => $chat_id ,
             "text" => "
-[MKARY](tg://user?id=7217896334)
+[MR.BLACK](tg://user?id=7790070110)
 *عذرا لا يمنك رف ملفاتك هنا لانك غير مشترك 
 يمكنك التواصل مع المطور للاشتراك في البوت*
 ",
@@ -3200,10 +3200,10 @@ if ($command == "up_webhook") {
         'show_alert' => true
     ]);
     
-    send_message('- بواسطة @estedafabot | تم إنشاء الويب هوك بنجاح ✅!
+    send_message('- بواسطة @CV_FHIBOT | تم إنشاء الويب هوك بنجاح ✅!
 - أرسل /start لبدء التشغيل ♻️!
 - ملاحظة : إذا لم يعمل البوت يمكنك التحقق من بوت فحص الملفات لمعرفة أي خطأ [@error_syntax_bot] 📛!
-• يمكنك الاشتراك لتتابع آخر التحديثات @INNV8 •', $from_id, $tk);
+• يمكنك الاشتراك لتتابع آخر التحديثات @FROM_PHP •', $from_id, $tk);
 
 } elseif ($command == "del_webhook") {
 
@@ -3223,8 +3223,8 @@ if ($command == "up_webhook") {
         'show_alert' => true
     ]);
 
-    send_message('- بواسطة @estedafabot | تم حذف الويب هوك بنجاح ✅!
-• يمكنك الاشتراك لتتابع آخر التحديثات @INNV8 •', $from_id, $tk);
+    send_message('- بواسطة @CV_FHIBOT | تم حذف الويب هوك بنجاح ✅!
+• يمكنك الاشتراك لتتابع آخر التحديثات @FROM_PHP •', $from_id, $tk);
 } elseif ($command == "information_bot") {
     $tk = $bot["Info_from_upload"][$cr]["token"];
     $ul = $bot["Info_from_upload"][$cr]["webhook"];
